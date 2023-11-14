@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Times do IFMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body id="body" class="min-h-screen min-w-screen bg-gray-950 md:py-14 py-4 flex flex-col gap-2 items-center justify-center text-white overflow-x-hidden">
+    <form class="flex flex-col gap-2 bg-gray-900 p-10 rounded-md">
+      <div class="flex justify-between gap-2 items-center">
+        <label for="input_nome">Nome</label>
+        <input type="text" id="input_nome" class="bg-gray-800 outline-none px-2 py-1 rounded-md"/>
+      </div>
+      <div class="flex justify-between gap-2 items-center">
+        <label for="input_profissao">Profissão</label>
+        <input type="text" id="input_profissao" class="bg-gray-800 outline-none px-2 py-1 rounded-md"/>
+      </div>
+      <div class="flex justify-between gap-2 items-center">
+        <label for="input_imagem">Imagem</label>
+        <input type="text" id="input_imagem" class="bg-gray-800 outline-none px-2 py-1 rounded-md"/>
+      </div>
+      <div class="flex justify-between gap-2 items-center">
+        <label for="input_time">Time</label>
+        <select id="input_time" class="flex-1 bg-gray-800 rounded-md px-2 py-1 outline-none"></select>
+      </div>
+      <button id="submit_button" class="bg-emerald-500 px-2 py-1 rounded-md">Adicionar</button>
+    </form>
+
+    <div id="div_times" class="mx-3 flex flex-col gap-2">
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            Front-end
+            <div id="div_frontend" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            Data Science
+            <div id="div_datascience" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            DevOps
+            <div id="div_devops" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            UX e Design
+            <div id="div_ux" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            Mobile
+            <div id="div_mobile" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+        <div class="flex flex-col min-w-[350px] w-full max-w-screen bg-gray-800 rounded-md text-center px-3 py-2">
+            Inovação e Gestão
+            <div id="div_inovacao" class="flex items-center justify-center flex-wrap gap-2"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
