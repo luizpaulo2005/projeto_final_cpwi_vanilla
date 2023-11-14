@@ -34,15 +34,22 @@ for (const time of times) {
 
 const adicionarPessoa = (e) => {
   e.preventDefault();
-  const pessoa = {
-    nome: input_nome.value,
-    profissao: input_profissao.value,
-    imagem: input_imagem.value,
-    time: input_time.value,
-  };
-  pessoas.push(pessoa);
 
-  renderizarPessoas();
+  if (input_nome.value === "" || input_profissao.value === "" || input_imagem.value === "" || input_time.value === "") {
+    alert("Preencha todos os campos")
+  } else {
+    const pessoa = {
+      nome: input_nome.value,
+      profissao: input_profissao.value,
+      imagem: input_imagem.value,
+      time: input_time.value,
+    };
+    pessoas.push(pessoa);
+  
+    renderizarPessoas();
+  }
+
+  
 };
 
 const renderizarPessoas = () => {
